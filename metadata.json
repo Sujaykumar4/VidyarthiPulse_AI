@@ -1,0 +1,11 @@
+{
+  "name": "VidyarthiPulse AI",
+  "description": "Personal AI Tutor for Indian Students with Voice and Image interactions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

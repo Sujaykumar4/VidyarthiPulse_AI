@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@media print {
+  body {
+    background-color: white !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #study-dashboard, #study-dashboard * {
+    visibility: visible;
+  }
+  #study-dashboard {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+  }
+  .print-hidden,
+  .print-hidden * {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
