@@ -1,57 +1,84 @@
-# VidyarthiPulse 🎓
+# VidyarthiPulse
 
-VidyarthiPulse is an AI-powered educational platform designed to provide instant, high-quality explanations for students' doubts. Built with modern web technologies, it leverages Google's Gemini AI to analyze questions—including images of handwritten or printed text—and generates easy-to-understand, step-by-step explanations.
+VidyarthiPulse is an AI-powered educational technology platform engineered to deliver instant, high-quality, and context-aware academic explanations for students. By leveraging advanced multimodal artificial intelligence, the platform allows students to upload images of equations, handwritten notes, or printed questions, and receive structured, step-by-step guidance. 
 
-## Features ✨
-- **Instant Doubt Resolution:** Upload images of questions or provide transcripts, and get instant explanations.
-- **AI-Powered Analysis:** Powered by Google's state-of-the-art Gemini AI model.
-- **Study Dashboard:** Automatically breaks down concepts, provides formulas, and generates quick quizzes to test understanding.
-- **Multilingual Explanations:** Get explanations in simple plain text, perfect for sharing over WhatsApp or saving as notes.
-- **Printable Notes:** Beautiful, print-ready study notes that can be exported as PDFs or printed directly from the dashboard.
+This repository serves as the core codebase, open for hackathon participants, developers, and open-source contributors to build, scale, and innovate upon the current architecture.
 
-## Tech Stack 🛠️
-- **Frontend:** React 19, Vite, Tailwind CSS, Motion (Framer)
-- **Backend:** Node.js, Express, TypeScript
-- **AI:** Google GenAI SDK (Gemini 2.5 Flash)
-- **Database:** PostgreSQL (via Drizzle ORM)
-- **Authentication:** Firebase Authentication
+---
 
-## Getting Started 🚀
+## The Problem Statement
+
+Traditional educational setups often struggle to provide personalized, real-time feedback to students when they encounter academic bottlenecks outside the classroom. Existing solutions are either costly (private tutoring) or lack interactive, step-by-step guidance that explains *why* a solution works rather than just providing the final answer. 
+
+VidyarthiPulse addresses this gap by creating an AI-driven, accessible, and scalable doubt-resolution engine. The goal of this project is to democratize quality education, making high-level academic support available to every student, anywhere, at any time.
+
+---
+
+## Key Features
+
+* **Multimodal Doubt Resolution:** Supports text inputs and images of handwritten or printed questions.
+* **Intelligent Concept Breakdown:** Automatically extracts formulas, defines core concepts, and structures answers sequentially.
+* **Adaptive Knowledge Evaluation:** Generates context-based quick quizzes dynamically to assess and reinforce student understanding.
+* **Exportable Study Material:** Formats explanations into clean, print-ready summaries that can be saved as PDFs or shared as plain text.
+
+---
+
+## Technical Stack
+
+* **Frontend:** React 19, Vite, Tailwind CSS, Motion (Framer)
+* **Backend:** Node.js, Express, TypeScript
+* **Artificial Intelligence:** Google GenAI SDK (Gemini 2.5 Flash)
+* **Database & Auth:** Firebase Integration (Authentication and Configuration)
+
+---
+
+## Getting Started
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- PostgreSQL database
-- Firebase account
-- Google Gemini API Key
 
-### Installation
+* Node.js (v18 or higher)
+* npm or yarn package manager
+* Google Gemini API Key
 
-1. **Clone the repository:**
+### Installation and Local Setup
+
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Sujaykumar4/vid.git
    cd vid
    ```
 
-2. **Install dependencies:**
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-3. **Set up environment variables:**
-   Create a `.env` file in the root directory and add the necessary credentials as outlined in `.env.example`.
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory based on `.env.example`:
    ```env
-   GEMINI_API_KEY=your_gemini_api_key
-   # Add other required environment variables (Firebase, Database)
+   GEMINI_API_KEY="your_gemini_api_key_here"
+   APP_URL="http://localhost:3000"
    ```
 
-4. **Run the development server:**
+4. **Start the Development Server:**
    ```bash
    npm run dev
    ```
-   The application will be available at `http://localhost:3000`.
+   The local application will launch and be accessible at `http://localhost:3000`.
 
-## Contributing 🤝
-Contributions are welcome! Please feel free to submit a Pull Request.
+---
 
-## License 📄
-This project is open-source and available under the MIT License.
+## Contributing
+
+We welcome contributions from the developer community and hackathon participants. To contribute:
+
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes with clear, professional commit messages.
+4. Push to your branch and open a Pull Request.
+
+---
+
+## License
+
+This project is open-source software licensed under the MIT License.
